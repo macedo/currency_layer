@@ -1,6 +1,7 @@
 # frozen_string_literal: true
 
 require "faraday"
+require "faraday/retry"
 require_relative "currency_layer/config"
 require_relative "currency_layer/version"
 
@@ -25,6 +26,10 @@ module CurrencyLayer
       url: "https://api.currencylayer.com",
       params: { access_key: config.access_key }
     ) do |conn|
+      conn.request :retry, {
+        max: config.max_retries,
+        interval: config.retry_interval
+      }
       conn.response :json
     end
   end
