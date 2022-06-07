@@ -1,0 +1,57 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.currencylayer.com/live?access_key=371556383fd19f6bb7d665b040532ba9&currencies=BRL,EUR&source=USD
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.3.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Tue, 07 Jun 2022 19:58:54 GMT
+      Content-Type:
+      - application/json; Charset=UTF-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      X-Apilayer-Transaction-Id:
+      - 6391ea83-9674-42a5-bbcb-4b0cc81de75f
+      Access-Control-Allow-Methods:
+      - GET, HEAD, POST, PUT, PATCH, DELETE, OPTIONS
+      Last-Modified:
+      - Tue, 07 Jun 2022 19:39:05 GMT
+      Access-Control-Allow-Origin:
+      - "*"
+      X-Request-Time:
+      - '0.011'
+      Cf-Cache-Status:
+      - DYNAMIC
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Report-To:
+      - '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=no%2F8EInPrRwt9IxNL2Jn%2B25AGusr6ee%2Fh4tbJpLMZsh5pbDt%2BNz77riRLG9mCMRQA%2BhUXC2hEPG4b3rqIA0dVtQdiuCuYRhAh9O8e7B1qs3G2Ymz%2FE53TIngkyYKrn2ChDMU8BXu51A%3D"}],"group":"cf-nel","max_age":604800}'
+      Nel:
+      - '{"success_fraction":0,"report_to":"cf-nel","max_age":604800}'
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 717bf7153c3ea6c4-GRU
+      Alt-Svc:
+      - h3=":443"; ma=86400, h3-29=":443"; ma=86400
+    body:
+      encoding: ASCII-8BIT
+      string: '{"success":true,"terms":"https:\/\/currencylayer.com\/terms","privacy":"https:\/\/currencylayer.com\/privacy","timestamp":1654630745,"source":"USD","quotes":{"USDBRL":4.872102,"USDEUR":0.93351}}'
+  recorded_at: Tue, 07 Jun 2022 19:58:53 GMT
+recorded_with: VCR 6.1.0
