@@ -18,5 +18,5 @@ RSpec.configure do |config|
 end
 
 CurrencyLayer.configure do |config|
-  config.access_key = "371556383fd19f6bb7d665b040532ba9"
+  config.access_key = "super_secret_access_key"
 end

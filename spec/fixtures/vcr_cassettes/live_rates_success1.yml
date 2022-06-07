@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: https://api.currencylayer.com/live?access_key=371556383fd19f6bb7d665b040532ba9&currencies=BRL,EUR&source=USD
+    uri: https://api.currencylayer.com/live?access_key=super_secret_access_key&currencies=BRL,EUR&source=USD
     body:
       encoding: US-ASCII
       string: ''

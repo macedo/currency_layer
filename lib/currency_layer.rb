@@ -31,6 +31,7 @@ module CurrencyLayer
         interval: config.retry_interval
       }
       conn.response :json
+      conn.response :raise_error
     end
   end
 
